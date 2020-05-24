@@ -1,9 +1,7 @@
 <?php
-require_once("exemplo-03.php");
+require_once("exemplo-04.php");
 
-$cpf = new Documento();
-$cpf->setCpf("28023154800");
-
-var_dump($cpf->exibir());
+$endereco = new Endereco("Rua São Paulo", "48", "Carapicuiba");
+echo $endereco;
 
 ?>
