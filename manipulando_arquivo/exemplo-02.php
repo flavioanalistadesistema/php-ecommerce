@@ -8,7 +8,6 @@ foreach ($imagem as $img) {
         $filename = "imagem" . DIRECTORY_SEPARATOR . $img;
         
         $info = pathinfo($filename);
-        var_dump($info);
 
         $info['size'] = filesize($filename);
         $info['date'] = date('Y-m-d H:i:s', filemtime($filename));
