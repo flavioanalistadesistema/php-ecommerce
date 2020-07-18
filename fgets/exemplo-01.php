@@ -10,14 +10,15 @@ if (file_exists($filename)) {
 
     $data = [];
     while ($row = fgets($file)) {
-
+        
         $rowData = explode(",", $row);
         $linha = [];
 
         for ($i = 0; $i < count($header); $i++) {
-
+            
             $linha[$header[$i]] = $rowData[$i];
         }
+        
         array_push($data, $linha);
     }
 
